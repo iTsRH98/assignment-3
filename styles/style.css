@@ -1,0 +1,41 @@
+.banner-title {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FFDDAE, #9BB0C1, #FFF9BF);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bounce 1s infinite, gradientShift 3s infinite linear;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 
+animation colors:
+#FFDDAE
+#9BB0C1
+#FFF9BF
+*/
+
+
+@media screen and (max-width: 768px) {
+    .nav-title, .nav-btn, .nav-icon-btn, .dropdown-logo, .nav-dropdown{
+        display: none;
+    }
+    
+}
