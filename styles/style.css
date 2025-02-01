@@ -36,6 +36,5 @@ animation colors:
 @media screen and (max-width: 768px) {
     .nav-title, .nav-btn, .nav-icon-btn, .dropdown-logo, .nav-dropdown{
         display: none;
-    }
-    
+    } 
 }
